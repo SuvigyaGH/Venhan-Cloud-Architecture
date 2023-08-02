@@ -45,12 +45,12 @@ Following is a web application created to represent the cloud architecute flow o
 1. Start the development server:
 
    ```
-   npm start
+   npm run dev
    ```
 
-2. Open your web browser and go to `https://venhan-cloud-architecture.vercel.app/` to access Flowchart.io.
+2. Open your web browser and go to `https://venhan-cloud-architecture.vercel.app/` to access.
 
-3. To add a component, enter its name and type (input / output / default) in the input container and click "Add Component Button."
+3. To add a component, enter its name and type (input / output / default) in the input container and click "Add Component."
 
 4. To connect components, click and drag from the handle of one component to the handle of another.
 
