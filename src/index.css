@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Island+Moments&family=Manrope:wght@200;300;400;500;600&family=Mochiy+Pop+P+One&family=Parisienne&family=Poppins:wght@300&family=Tillana&family=Urbanist:wght@100&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Container for the entire app */
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  font-family: Manrope;
+  
+}
+
+/* Header styling */
+.header {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  font-family:Parisienne;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+/* Container for the React Flow chart */
+.flow-container {
+  width: 100%;
+  height: 80vh;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Input container styling */
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-between;
+  
+}
+
+/* Styling for input fields and buttons inside the input container */
+.input-container input {
+  @apply px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:border-blue-500;
+}
+
+.input-container button {
+  @apply px-3 py-2 border rounded-md text-sm font-medium text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200;
+}
+
+/* Styling for the instruction text */
+.instruction {
+  font-size: 14px;
+  color: #555;
+  
+}
