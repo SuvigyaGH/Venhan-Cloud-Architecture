@@ -16,15 +16,11 @@ import { initialEdges } from "./staticFiles/initialEdges";
 
 
 function App() {
-  // State variables for managing nodes and edges
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
-
-  // State variables for component name and type inputs
   const [name, setName] = useState("");
   const [type, setType] = useState("");
 
-  // Function to add a new component (node) to the flowchart
   const addNote = () => {
     setNodes((prevNodes) =>
       prevNodes.concat({
@@ -47,12 +43,10 @@ function App() {
     );
   };
 
-  // Callback function to handle when ReactFlow is loaded
   const onLoad = (reactflowInstance) => {
     reactflowInstance.fitView();
   };
 
-  // Callback function to handle when two nodes are connected
   const onConnect = useCallback(
     (params) => setEdges((prevEdges) => addEdge(params, prevEdges)),
     [setEdges]
@@ -62,7 +56,6 @@ function App() {
     <div className="outer-container">
       <div className="header">Cloud Architecture Flowchart</div>
 
-      {/* Container for the React Flow chart */}
       <div className="flow-container">
         <ReactFlow
           // elements={nodes.concat(edges)}
