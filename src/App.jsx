@@ -1,3 +1,4 @@
+// App.jsx
 import { useCallback, useState } from "react";
 import ReactFlow, {
   MiniMap,
@@ -9,6 +10,7 @@ import ReactFlow, {
 } from "reactflow";
 
 import "reactflow/dist/style.css";
+// https://infracopilot.io/
 
 import "./index.css"
 import { initialNodes } from "./staticFiles/initialNodes";
@@ -117,7 +119,6 @@ function App() {
             Add Component
           </button>
 
-          {/* Instruction */}
           <div className="instruction text-sm text-gray-500">
             *For deletion, press Backspace after selection.
           </div>
@@ -128,3 +129,5 @@ function App() {
 }
 
 export default App;
+
+

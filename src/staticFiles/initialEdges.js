@@ -1,3 +1,5 @@
+// initialEdges.js
+
 export const initialEdges = [
   {
     id: "e1-2",
@@ -134,3 +136,5 @@ export const initialEdges = [
     style: { stroke: "gray", strokeWidth: 2 },
   },
 ];
+
+

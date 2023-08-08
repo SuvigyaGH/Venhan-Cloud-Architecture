@@ -1,3 +1,5 @@
+// initialNodes.js
+
 export const initialNodes = [
     {
       id: "1",
@@ -91,4 +93,6 @@ export const initialNodes = [
       style: { backgroundColor: "lavender", zIndex: -1, width: 375, height: 150,fontFamily:'Poppins', textAlign: "end" },
     },
   ];
+  
+
   
