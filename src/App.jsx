@@ -61,7 +61,6 @@ function App() {
 
       <div className="flow-container">
         <ReactFlow
-          // elements={nodes.concat(edges)}
           nodes={nodes}
           edges={edges}
           onNodesChange={onNodesChange}
